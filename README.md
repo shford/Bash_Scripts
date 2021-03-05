@@ -1,13 +1,9 @@
 # Bash Scripts
 > A bash library for my personal setup and configuration that hopefully will be adaptable for you.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 So far this repository holds my personal bash setup script test on Ubuntu 20.04 Minimal Installation and a very small formatting script.
 
-![](header.png)
+![](Header.png)
 
 ## Installation
 
