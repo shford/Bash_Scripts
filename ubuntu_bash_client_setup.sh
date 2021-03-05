@@ -117,12 +117,11 @@ apt install -y gparted
 
 #install chrome if not already installed (actually this will pass incorrectly if there are config files on disk but that's fine for the purpose of this script)
 dpkg -l "google-chrome-stable" >& "/dev/null"
-#if [[ "${?}" -ne 0 ]]; then
+if [[ "${?}" -ne 0 ]]; then
 	#download package
-	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-	apt install -y ./google-chrome-stable_current_amd64.deb
-	rm google-chrome-stable_current_amd64.deb
-#fi
+	wget -O /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	apt install -y /tmp/google-chrome-stable_current_amd64.deb
+fi
 
 #install vlc media player
 apt install -y vlc
